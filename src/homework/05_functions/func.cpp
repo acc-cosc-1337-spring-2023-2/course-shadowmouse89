@@ -43,9 +43,9 @@ string reverse_string(string dna)
 {
     string cDNA = reverse_string(dna);
 
-    int dna_comp_length = cDNA.length();
+    int cDNA_length = cDNA.length();
 
-	for (int i = 0; i < dna_comp_length; i++)
+	for (int i = 0; i < cDNA_length; i++)
 		if (cDNA[i] == 'A')
 		{
             cDNA[i] = 'T';
