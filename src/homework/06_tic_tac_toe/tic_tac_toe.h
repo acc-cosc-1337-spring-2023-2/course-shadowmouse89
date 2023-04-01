@@ -19,11 +19,18 @@ class tic_tac_toe{
     string get_player() const;
     void display_board() const;
     void clear_board();
+    string get_winner();
+
     private:
     bool check_board_full();
     string player;
     std::vector<std::string> pegs = std::vector<std::string>(9, " ");
     void set_next_player();
+    string winner;
+    bool check_column_win();
+    bool check_row_win();
+    bool check_diagonal_win();
+    void set_winner();
 
 };
 
