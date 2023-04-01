@@ -1,7 +1,9 @@
-#include<iostream>
+#include<iostream>//tells C++ to bring in the code that allows us to display to screen
+
+using std::cout;//do not use namespace
 
 int main()
 {
-    std::cout<<"Hello World!";
+   cout<<"Hello World!";
     return 0;
 }
